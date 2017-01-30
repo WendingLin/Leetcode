@@ -32,7 +32,4 @@ class Solution(object):
                 return [dict[nums[loca]], loca]
             else:
                 dict[target-nums[loca]]=loca
-    nums=[2,7,11,15]
-    target=9
-    print(twoSum(nums,target))
 

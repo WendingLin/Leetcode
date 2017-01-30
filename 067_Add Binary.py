@@ -61,5 +61,3 @@ class Solution(object):
         else:
             return self.addBinary(a[0:-1], b[0:-1]) + '1'
 
-s=Solution()
-print(s.addBinary("1111", "1111"))

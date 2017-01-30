@@ -27,7 +27,3 @@ class Solution(object):
                     nums[loca_change]=nums[loca_change]-nums[loca_part]
                     break
             nums[loca_part+1:]=list(reversed(nums[loca_part+1:]))
-s=Solution()
-nums=[1, 2, 3]
-s.nextPermutation(nums)
-print(nums)

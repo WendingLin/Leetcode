@@ -77,7 +77,3 @@ class Solution(object):
 
                 return(max_of_left+min_of_right)/2.0
 
-s=Solution()
-nums1=[1,2]
-nums2=[]
-print(s.findMedianSortedArrays(nums1, nums2))
