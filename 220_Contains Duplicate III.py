@@ -1,5 +1,5 @@
 #220. Contains Duplicate III
-import collections
+
 
 
 class Solution(object):
@@ -11,15 +11,16 @@ class Solution(object):
         :rtype: bool
         """
     #My Solution
-        if k < 1 or t < 0:
+        if k<1 or t<0:
             return False
-        numDict = collections.OrderedDict()
-        for x in range(len(nums)):
-            key = nums[x] / max(1, t)
-            for m in (key, key - 1, key + 1):
-                if m in numDict and abs(nums[x] - numDict[m]) <= t:
+        import collections
+        num_dict=collections.OrderedDict()
+        for i in range(len(nums)):
+            key=nums[i]/max(1, t)
+            for m in (key, key-1, key+1):
+                if m in num_dict and abs(num_dict[m]-nums[i])<=t:
                     return True
-            numDict[key] = nums[x]
-            if x >=  k:
-                numDict.popitem(last=False)
+            num_dict[key]=nums[i]
+            if i>=k:
+                num_dict.popitem(last=False)
         return False
