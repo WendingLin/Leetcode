@@ -42,9 +42,6 @@ class Solution(object):
             return -1
         else:
             return left
-S=Solution()
-nums=[3,4,5,6,1,2]
-S.search(nums, 7)
 
 
 
